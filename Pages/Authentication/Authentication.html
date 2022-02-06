@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://flora-ui.netlify.app/src/app.css">
+    <link rel="stylesheet" href="./Authentication.css">
+    <title>FloraShop | Login</title>
+</head>
+<body>
+    <nav class="nav-container align-center">
+
+        <div class="p2 nav-logo flex-r">
+            <i class="app-icon fab fa-pagelines"></i>
+            <span class="app-name">FloraShop</span>
+        </div>
+
+        <div class="nav-link">
+            <a href="../../index.html"><button class="btn btn-link nav-btn">Home</button></a>
+            <a href="../../index.html#featured-prod-section"><button class="btn btn-link nav-btn">Catalouges</button></a>
+            <a href=""><button class="btn btn-link nav-btn">Garden Guide</button></a>
+            <a href=""><button class="btn btn-link nav-btn">About us</button></a>
+        </div>
+
+        <div class="search-input input-container">
+            <input class="input-icon-field input-field" type="text" placeholder="Search">
+            <i class="input-icon fas fa-search"></i>
+        </div>
+
+        <div class="flex-r nav-icons">
+
+        <div class="flex-c center">
+        <div class="m1 badge-container">
+            <a href=""><i class="nav-icon badge-icon far fa-heart"></i></a>
+            <span class="badge right-badge sm-badge">1</span>
+        </div>
+        <span class="nav-icon-text">Wishlist</span>
+        </div>
+
+        <div class="flex-c center">
+        <div class="m1 badge-container">
+            <a href=""><i class="nav-icon badge-icon fas fa-shopping-cart"></i></a>
+            <span class="badge right-badge sm-badge">1</span>
+        </div>
+        <span class="nav-icon-text">Cart</span>
+        </div>
+        </div>
+
+    </nav>
+    
+    <main class="auth-section">
+    <section class="login-section">
+        <form class="form form-auth">
+            <div class="auth-heading">
+                <h3>Login</h3>
+                <img class="responsive-img auth-img" src="../../assets/images/authentication.svg" alt="authentication">
+            </div>
+    
+            <div class="input-auth input-container">
+                <label class="input-label" for="email">Email</label>
+                <input class="input-field auth-field" type="email" id="email" placeholder="Enter your email here">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="password">Password</label>
+                <input class="input-field auth-field" type="password" id="password" placeholder="*******">
+            </div>
+
+            <div class="auth-footer">
+            <button class="btn-auth btn btn-secondary">Login</button>
+            <button class="btn-auth btn btn-secondary-outline">Login as guest</button>
+            <span class="auth-span">Not a user yet?</span> <button type="button" class="auth-link link-sign-up btn btn-link-underline">Create Account</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="sign-up-section hide">
+        <form class="form form-auth">
+            <div class="auth-heading">
+                <h3>Sign-up</h3>
+                <img class="responsive-img auth-img" src="../../assets/images/authentication.svg" alt="authentication">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="username">Username</label>
+                <input class="input-field auth-field" type="text" id="username" placeholder="Username">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="signup-email">Email</label>
+                <input class="input-field auth-field" type="email" id="signup-email" placeholder="Enter your email here">
+            </div>
+
+            <div class="input-auth input-container">
+                <label class="input-label" for="signup-password">Password</label>
+                <input class="input-field auth-field" type="password" id="signup-password" placeholder="*******">
+            </div>
+
+            <div class="checkbox align-center">
+                <input class="checkbox-input" type="checkbox"> 
+                <label class="checkbox-label">I accept all terms and conditions.</label>
+            </div>
+
+            <div>
+            <button class="btn-auth btn btn-secondary">Create an Account</button>
+            <span class="auth-span">Already registered? </span><button type="button" class="auth-link link-login btn btn-link-underline">Login here</button>
+            </div>
+        </form>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <p>Made with <i class="red-color fas fa-heart"></i> by Vrinda Mahajan </p>
+        <ul class="m2 list-non-bullet">
+            <li class="p1 inline"><a class="footer-icons" href="https://github.com/vrinda-mahajan"><i class="fab fa-github"></i></a></li>
+            <li class="p1 inline"><a class="footer-icons" href="https://twitter.com/vrinda_mahajan"><i class="fab fa-twitter"></i></a></li>
+            <li class="p1 inline"><a class="footer-icons" href="https://www.linkedin.com/in/vrinda-mahajan-7a2b2a20b/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div>© copyright 2022 Flora UI</div>
+    </footer>
+
+    <script src="./Authentication.js"></script>
+</body>
+</html>
