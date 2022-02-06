@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--heading-color);
+}
+:root {
+    --grey-color:#9A9A9A;
+    --light-grey-color:#d3d3d3;
+}
 /* Nav-bar */
 .nav-container {
+    background-color: var(--white-color);
     box-shadow: 0 2px 10px var(--box-shadow);
-    margin-bottom: 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 .app-name {
     font-size: 3rem;
@@ -40,6 +59,7 @@
 /* Main Section */
 .main {
     position: relative;
+    margin-top: 4rem;
 }
 .header-img {
     height: 40rem;
@@ -76,15 +96,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.best-seller-cards > div {
-    width: 22rem;
-} 
-.best-seller-cards > div >img {
-    width: 22rem;
-    height: 22rem;
-} 
 .best-seller-icon {
-    margin: 0;
     margin-left: auto;
 }
 
@@ -102,7 +114,6 @@
     width: 50rem;
     opacity: 0.6;
     border-radius: 5px;
-    transition: width 0.3s ease-out;
 }
 .featured-overlay {
     position: absolute;
@@ -111,7 +122,10 @@
     color: var(--black-color);
 }
 .featured-img:hover {
-    width: 51rem;
+    border: 1px solid var(--box-shadow);
+}
+.btn-featured {
+    margin: 1rem 0;
 }
 
 /* Footer */
@@ -132,11 +146,17 @@
 }
 
 @media screen and (max-width : 786px) {
+    html {
+        font-size: 55%;
+    }
     .nav-link {
         display: none;
     }
 }
 @media screen and (max-width : 480px) {
+    html {
+        font-size: 40%;
+    }
     .nav-link {
         display: none;
     }

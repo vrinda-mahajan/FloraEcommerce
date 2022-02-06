@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://flora-ui.netlify.app/src/app.css">
+    <link rel="stylesheet" href="./ProductPage.css">
+    <title>FloraShop | Products</title>
+</head>
+<body>
+    <nav class="nav-container align-center">
+
+        <div class="p2 nav-logo flex-r">
+            <i class="app-icon fab fa-pagelines"></i>
+            <span class="app-name">FloraShop</span>
+        </div>
+
+        <div class="nav-link">
+            <a href="../../index.html"><button class="btn btn-link nav-btn">Home</button></a>
+            <a href="../../index.html#featured-prod-section"><button class="btn btn-link nav-btn">Catalouges</button></a>
+            <a href=""><button class="btn btn-link nav-btn">Garden Guide</button></a>
+            <a href=""><button class="btn btn-link nav-btn">About us</button></a>
+        </div>
+
+        <div class="search-input input-container">
+            <input class="input-icon-field input-field" type="text" placeholder="Search">
+            <i class="input-icon fas fa-search"></i>
+        </div>
+
+        <div class="flex-r nav-icons">
+        <div class="flex-c center">
+        <div class="m1 badge-container">
+            <a href=""><i class="nav-icon badge-icon fas fa-user"></i></a>
+        </div>
+        <span class="nav-icon-text">Profile</span>
+        </div>
+
+        <div class="flex-c center">
+        <div class="m1 badge-container">
+            <a href=""><i class="nav-icon badge-icon far fa-heart"></i></a>
+            <span class="badge right-badge sm-badge">1</span>
+        </div>
+        <span class="nav-icon-text">Wishlist</span>
+        </div>
+
+        <div class="flex-c center">
+        <div class="m1 badge-container">
+            <a href=""><i class="nav-icon badge-icon fas fa-shopping-cart"></i></a>
+            <span class="badge right-badge sm-badge">1</span>
+        </div>
+        <span class="nav-icon-text">Cart</span>
+        </div>
+        </div>
+
+    </nav>
+    <div class="flex-r">
+    <aside class="filter-sidebar">
+        <div class="filter-sticky align-center">
+        <h6 class="filter">FILTERS</h6>
+        <button class="btn-clear btn btn-link-underline">Clear All</button>
+        </div>
+        <hr>
+
+        <h6 class="filter-heading">Price</h6>
+        <form>
+            <label class="slider-label" for=""><span>200</span> <span>600</span> <span>1000</span></label>
+            <input type="range" min="200" max="1000" value="600" class="slider">
+        </form>
+
+        <h6 class="filter-heading">Category</h6>
+        <form>
+            <input id="planters" type="checkbox">
+            <label for="planters">Planters</label><br>
+            <input id="plants" type="checkbox">
+            <label for="plants">Plants</label><br>
+            <input id="fertilizers" type="checkbox">
+            <label for="fertilizers">Fertilizers</label><br>
+            <input id="tools" type="checkbox">
+            <label for="tools">Tools</label><br>
+        </form>
+
+        <h6 class="filter-heading">Rating</h6>
+        <form>
+            <input id="4stars" type="radio" name="rating">
+            <label for="4stars">4 Stars & above</label><br>
+            <input id="3stars" type="radio" name="rating">
+            <label for="3stars">3 Stars & above</label><br>
+            <input id="2stars" type="radio" name="rating">
+            <label for="2stars">2 Stars & above</label><br>
+            <input id="1stars" type="radio" name="rating">
+            <label for="1stars">1 Stars & above</label><br>
+        </form>
+
+        <h6 class="filter-heading">Sort by</h6>
+        <form>
+            <input id="low-to-high" type="radio" name="sort-by">
+            <label for="low-to-high">Price - Low to High</label><br>
+            <input id="high-to-low" type="radio" name="sort-by">
+            <label for="high-to-low">Price - High to Low</label><br>
+        </form>
+    </aside>
+    <main class="product-main flex-wrap">
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/croton.jpg" alt="croton" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Croton Plant</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 499</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/zzplant.jpg" alt="zz plant" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">ZZ Plant</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 600</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/spiderPlant.jpg" alt="spider plant" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Spider Plant</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 299</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/zebra.jpg" alt="zebra plant" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Zebra Plant</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 700</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/cocopeat.jpg" alt="cocopeat" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Cocopeat</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 399</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/vermicompost.jpg" alt="vermicompost" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Vermicompost</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 499</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <div class="badge-container">
+                <span class="text-badge">NEW</span>
+                <img src="../../assets/images/planter1.jpg" alt="planter" class="card-img">
+            </div>
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Planter</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 699</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/planter2.jpg" alt="planter" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Clay Pot</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 250</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+        <div class="card vertical-card2-container product-card">
+            <img src="../../assets/images/tool3.jpg" alt="tool" class="card-img">
+            <div class="p1 card-text-container">
+                <div class="card-heading flex-r">
+                    <div>
+                        <h5 class="card-header">Watering Can</h5>
+                        <div class="card-info">Stock available</div>
+                    </div>
+                    <p class="card-price m-left-auto">Rs. 550</p>
+                </div>
+                <h6>Neque porro quisquam est qui  adipisci velit...</h6>
+                <div class="card-btns align-center">
+                    <button class="btn btn-with-icon"><i class="p1-right fas fa-shopping-cart"></i>Add to cart</button>
+                    <button class="btn btn-icon card-icon-btn m-left-auto"><i class="far fa-heart"></i></button>
+                </div>
+            </div> 
+        </div>
+
+    </main>
+    </div>
+
+    <footer class="footer">
+        <p>Made with <i class="red-color fas fa-heart"></i> by Vrinda Mahajan </p>
+        <ul class="m2 list-non-bullet">
+            <li class="p1 inline"><a class="footer-icons" href="https://github.com/vrinda-mahajan"><i class="fab fa-github"></i></a></li>
+            <li class="p1 inline"><a class="footer-icons" href="https://twitter.com/vrinda_mahajan"><i class="fab fa-twitter"></i></a></li>
+            <li class="p1 inline"><a class="footer-icons" href="https://www.linkedin.com/in/vrinda-mahajan-7a2b2a20b/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        <div>© copyright 2022 Flora UI</div>
+    </footer>
+</body>
+</html>
