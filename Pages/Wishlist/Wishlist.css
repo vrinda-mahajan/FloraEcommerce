@@ -1,0 +1,9 @@
+@import url(../../index.css);
+
+.wishlist-text {
+    text-align: center;
+    margin: 3rem 0;
+}
+.wishlist-container {
+    margin: 4rem;
+}

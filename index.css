@@ -7,10 +7,12 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     font-family: "Montserrat", sans-serif;
     color: var(--heading-color);
+    height: 100%;
 }
 :root {
     --grey-color:#9A9A9A;
