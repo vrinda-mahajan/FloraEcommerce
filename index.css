@@ -24,6 +24,7 @@ body {
     z-index: 99;
 }
 .app-name {
+    color: var(--heading-color);
     font-size: 3rem;
     font-family: 'Cormorant Garamond', serif;
 }
