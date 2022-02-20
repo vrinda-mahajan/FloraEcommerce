@@ -1,5 +1,11 @@
 @import url(../../index.css);
 
+html{
+    height: 100%;
+}
+body {
+    height: 100%;
+}
 .auth-section {
     display: flex;
     flex-direction: column;
