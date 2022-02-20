@@ -2,7 +2,7 @@
 
 .filter-sidebar {
     width: 20%;
-    height: 86vh;
+    height: 100vh;
     top: 8rem;
     overflow-y: scroll;
     position: sticky;

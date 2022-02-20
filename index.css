@@ -7,12 +7,10 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    height: 100%;
 }
 body {
     font-family: "Montserrat", sans-serif;
     color: var(--heading-color);
-    height: 100%;
 }
 :root {
     --grey-color:#9A9A9A;
@@ -20,11 +18,10 @@ body {
 }
 /* Nav-bar */
 .nav-container {
-    background-color: var(--white-color);
-    box-shadow: 0 2px 10px var(--box-shadow);
     position: sticky;
+    width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 99;
 }
 .app-name {
     font-size: 3rem;
